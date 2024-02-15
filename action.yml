@@ -1,3 +1,7 @@
 name: "GPT Proofreader"
 description: "An action to proofread blog posts I write"
 author: "Tony  Lofreso"
+
+runs:
+  using: "node16"
+  main: "dist/index.js"
