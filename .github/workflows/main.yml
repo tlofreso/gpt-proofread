@@ -8,7 +8,7 @@ jobs:
       - name: Checkou repo
         uses: actions/checkout@v2
       - name: Check Grammar and Spelling
-        uses: tlofreso/gpt-proofread@v1
+        uses: ./
         with:
           github-token: "my-token"
           openai-api-key: "my-api-key"
