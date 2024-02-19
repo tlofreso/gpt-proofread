@@ -1,4 +1,4 @@
-on: [push]
+on: [push, workflow_dispatch]
 
 jobs:
   hello_world:
@@ -8,7 +8,7 @@ jobs:
       - name: Checkou repo
         uses: actions/checkout@v2
       - name: Check Grammar and Spelling
-        uses: ./
+        uses: tlofreso/gpt-proofread
         with:
           github-token: "my-token"
           openai-api-key: "my-api-key"
