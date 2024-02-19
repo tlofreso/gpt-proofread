@@ -1,0 +1,14 @@
+on: [push]
+
+jobs:
+  hello_world:
+    runs-on: ubuntu-latest
+    name: hello
+    steps:
+      - name: Checkou repo
+        uses: actions/checkout@v2
+      - name: Check Grammar and Spelling
+        uses: ./
+        with:
+          github-token: "my-token"
+          openai-api-key: "my-api-key"
