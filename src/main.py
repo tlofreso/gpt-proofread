@@ -1,6 +1,6 @@
 import os
 
-github_token = os.getenv('INPUT_GITHUB-TOKEN')
-openai_api_key = os.getenv('INPUT_OPENAI-API-KEY')
+openai_api_key = os.getenv('OPENAI_API_KEY')
+proofread_assistant_id = os.getenv('PROOFREAD_ASSISTANT_ID')
 
-print(github_token,openai_api_key)
+print(proofread_assistant_id)
